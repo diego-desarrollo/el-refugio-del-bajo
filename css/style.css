@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: blanchedalmond; */
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+nav {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2 / 4;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+  padding: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color ease 0.5s;
+}
+
+ul li a:hover {
+  color: orangered;
+}
+
+.justificar-centro {
+  justify-self: center;
+  align-self: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2-rows {
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr);
+}
+
+.flexbox-bajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.div-bajos {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.div-logo {
+  /* display: flex; */
+  justify-self: left;
+  align-self: center;
+}
+
+.div-carrito {
+  align-self: center;
+  justify-self: end;
+  padding-right: 50px;
+}
+
+.grilla-header-logo {
+  justify-self: baseline;
+  align-self: center;
+}
+
+.img-bajo1 {
+  border-radius: 20%;
+  border: 2px solid;
+  border-color: orange;
+  margin: 20px;
+}
+
+.logo {
+  border: 5px solid orange;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.logo-carrito {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: end;
+}
+
+.iconos {
+  height: 50px;
+  width: 50px;
+}
+
+.flecha-enviar {
+  height: 20px;
+  width: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.box-container {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #333;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Box model para incluir padding y border en el ancho total */
+}
+
+/* Estilos para el iframe */
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  /* Eliminar borde del iframe */
+}
+
+/* Reglas media query */
+/* Mobile */
+@media only screen and (max-width: 500px) {
+
+}
+
+/* Tablet */
+@media only screen and (max-width: 501px) and (max-width: 960px) {
+  
+}
+
+/* Desktop */
+@media only screen and (max-width: 961px) {
+  /* .grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: lightcoral;
+  } */
+}
+/* Reglas media query */
