@@ -127,7 +127,6 @@ ul li a:hover {
 .box-container {
   width: 80%;
   margin: 20px auto;
-  border: 2px solid #333;
   padding: 20px;
   box-sizing: border-box;
   /* Box model para incluir padding y border en el ancho total */
@@ -152,6 +151,7 @@ iframe {
 
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
   /* Estilos CSS para pantallas medianas */
   /* Por ejemplo: */
   .container {
@@ -162,6 +162,7 @@ iframe {
 
 /* Desktop */
 @media only screen and (min-width: 1025px) {
+
   /* Estilos CSS para pantallas grandes */
   /* Por ejemplo: */
   .container {
