@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* estilos globales*/
+@font-face {
+  font-family: "roboto";
+  src: url("../assets/fonts/coolvetica-rg.otf");
+}
+.flex {
+  display: flex;
+}
+
+* {
+  background-color: bisque;
+}
+
+.div-logo {
+  /* display: flex; */
+  justify-self: left;
+  align-self: center;
+}
+
+.grilla-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.div-carrito {
+  align-self: center;
+  justify-self: end;
+  padding-right: 50px;
+}
+
+.logo {
+  border: 5px solid orange;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.logo-carrito {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: end;
+}
+
+nav {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  font-size: 20px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  transition: color ease 0.5s;
+}
+nav ul li :hover {
+  color: orange;
+}
+
+.carousel {
+  height: 500px;
+  width: 500px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.img-bajo1 {
+  border-radius: 20%;
+  border: 2px solid;
+  border-color: orange;
+  margin: 20px;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.iconos {
+  height: 50px;
+  width: 50px;
+}
+
+.flecha-enviar {
+  height: 20px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

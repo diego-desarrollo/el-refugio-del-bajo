@@ -1,0 +1,57 @@
+.div-logo {
+  /* display: flex; */
+  justify-self: left;
+  align-self: center;
+}
+
+.grilla-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.div-carrito {
+  align-self: center;
+  justify-self: end;
+  padding-right: 50px;
+}
+
+.logo {
+  border: 5px solid orange;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.logo-carrito {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: end;
+}
+
+nav {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  font-size: 20px;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline;
+      padding: 10px;
+
+      a {
+        text-decoration: none;
+        transition: color ease 0.5s;
+      }
+
+      & :hover {
+        color: orange;
+      }
+    }
+
+  }
+}

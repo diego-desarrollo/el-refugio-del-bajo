@@ -1,0 +1,14 @@
+/* estilos globales*/
+//este comentario solo queda en el sass
+@font-face {
+  font-family: 'roboto';
+  src: url('../assets/fonts/coolvetica-rg.otf');
+}
+
+.flex {
+  display: flex;
+}
+
+* {
+  background-color: bisque;
+}
