@@ -17,6 +17,14 @@
   background-color: bisque;
 }
 
+.dropdown-item {
+  background-color: bisque;
+}
+
+.dropdown-divider {
+  background-color: bisque;
+}
+
 .div-logo {
   /* display: flex; */
   justify-self: left;
@@ -48,12 +56,21 @@
   align-items: end;
 }
 
+.navbar {
+  background-color: bisque;
+}
+
+.bg-body-tertiary {
+  background-color: bisque !important;
+}
+
 nav {
   display: flex;
   justify-self: center;
   align-self: center;
   grid-column: 2/3;
   font-size: 20px;
+  background-color: bisque;
 }
 nav ul {
   list-style-type: none;
