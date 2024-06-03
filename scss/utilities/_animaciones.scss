@@ -1,6 +1,6 @@
-@keyframes efecto {
+@keyframes resaltar-texto {
     from {
-        color: orangered;
+        color: red;
     }
 
     to{
@@ -8,8 +8,8 @@
     }
 }
 
-.efecto {
-    animation-name: efecto;
+.resaltar-texto {
+    animation-name: resaltar-texto;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 1s;

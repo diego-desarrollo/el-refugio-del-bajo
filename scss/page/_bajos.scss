@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    // padding: 20px;
 }
 
 .div-bajos {
@@ -32,6 +32,7 @@
     // border-radius: 20%;
     border: 5px solid;
     border-color: orange;
+    border-radius: 20px;
     margin: 20px;
     height: 250px;
     transition: height 2s;
@@ -41,16 +42,9 @@
     height: 300px;
 }
 
-.btn-primary {
-    background-color: orange;
-    border-color: orange;
-    color: black;
-}
-
 .btn-primary:hover {
-    background-color: orange;
+    @extend .btn-primary;
     background-image: linear-gradient(to top, orange, orangered);
-    border-color: orangered;
     color: black;
 }
 

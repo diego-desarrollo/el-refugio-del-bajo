@@ -3,6 +3,11 @@
   width: 800px;
 }
 
+.borde-carrusel {
+  border: orangered solid;
+  border-radius: 20px;
+}
+
 .grilla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

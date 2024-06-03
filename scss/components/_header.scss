@@ -1,9 +1,17 @@
 /* Estilos generales */
+@import 'animate.css';
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+h1 {
+    background-color: transparent;
+    align-self: center;
+    animation: animate__fadeInLeft;
 }
 
 .logo {
@@ -78,6 +86,7 @@ nav {
 }
 
 .div-carrito {
+    display: flex;
     align-self: center;
     justify-self: end;
     padding-right: 50px;
