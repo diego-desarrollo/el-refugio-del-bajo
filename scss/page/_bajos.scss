@@ -54,6 +54,20 @@
     color: black;
 }
 
+.oferta{
+    // position: absolute;
+    // margin: 50px 110px;
+    // background-color: transparent;
+    font-size: 25px;
+    // color: orangered;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s
+}
+
+
 /* Reglas media query */
 /* Mobile */
 @media only screen and (max-width: 600px) {

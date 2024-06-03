@@ -242,6 +242,15 @@ body {
   color: black;
 }
 
+.oferta {
+  font-size: 25px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
 /* Reglas media query */
 /* Mobile */
 @media only screen and (max-width: 600px) {
