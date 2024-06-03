@@ -12,3 +12,7 @@
 * {
   background-color: bisque;
 }
+
+h1 {
+  @include texto-importante;
+}

@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.button-basic, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report {
+  background-color: red;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +28,11 @@
 
 * {
   background-color: bisque;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* Estilos generales */
@@ -67,8 +84,9 @@ nav {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 150px;
     left: 0;
+    z-index: 1;
   }
   .menu li {
     margin: 10px 0;
@@ -115,12 +133,34 @@ nav {
   background-color: bisque;
 }
 
+nav {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  font-size: 20px;
+  background-color: bisque;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  transition: color ease 0.5s;
+}
+nav ul li :hover {
+  color: orange;
+}
+
 body {
   background-color: bisque !important;
 }
 
 .carousel {
-  height: 500px;
   width: 500px;
 }
 
@@ -129,11 +169,99 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.justificar-centro {
+  justify-self: center;
+  align-self: center;
+}
+
+.grid-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2-rows {
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr);
+}
+
+.flexbox-bajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.div-bajos {
+  padding: 50px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
 .img-bajo1 {
-  border-radius: 20%;
-  border: 2px solid;
+  border: 5px solid;
   border-color: orange;
   margin: 20px;
+  height: 250px;
+  transition: height 2s;
+}
+
+.img-bajo1:hover {
+  height: 300px;
+}
+
+.btn-primary {
+  background-color: orange;
+  border-color: orange;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: orange;
+  background-image: linear-gradient(to top, orange, orangered);
+  border-color: orangered;
+  color: black;
+}
+
+/* Reglas media query */
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .grid-4-col {
+    grid-template-columns: auto;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .grid-4-col {
+    grid-template-columns: auto;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  /* Estilos CSS para pantallas grandes */
+  /* Por ejemplo: */
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+/* Reglas media query */
+/* Estilos para el contenedor principal */
+.box-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Box model para incluir padding y border en el ancho total */
+}
+
+/* Estilos para el iframe */
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  /* Eliminar borde del iframe */
 }
 
 .grid-footer {

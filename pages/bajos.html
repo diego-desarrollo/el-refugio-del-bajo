@@ -8,13 +8,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 
 <body>
     <!-- usar un div de contenedor para todo el layout solo con grid row y grid column-->
-    <header class="grid-4-col">
+    <header class="flex">
         <div class="div-logo flex">
             <img class="logo" src="../assets/images/logo.jfif" alt="logo de la pagina">
             <h1 style="align-self: center;">
@@ -23,16 +23,18 @@
         </div>
 
         <nav>
-            <ul>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="#">BAJOS</a></li>
-                <li><a href="./nosotros.html">NOSOTROS</a></li>
-                <li><a href="./consultas.html">CONSULTAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="consultas.html">CONSULTAS</a></li>
             </ul>
         </nav>
 
         <div class="div-carrito">
-            <a href="./carrito.html">
+            <a href="carrito.html">
                 <img class="logo-carrito" src="../assets/images/cart-shopping-solid.svg" alt="carrito">
             </a>
         </div>
@@ -45,17 +47,42 @@
     <section class="flexbox-bajos">
         <div class="div-bajos">
             <img class="img-bajo1" src="../assets/images/bajo-1.jpg" alt="bajo 1">
-            <h2>BAJO 1</h2>
+            <h2>BAJO Fender Jazz Bass</h2>
             <button type="button" class="btn btn-primary">Comprar</button>
         </div>
         <div class="div-bajos">
-            <img class="img-bajo1" src="../assets/images/bajo-1.jpg" alt="bajo 1">
-            <h2>BAJO 2</h2>
+            <img class="img-bajo1" src="../assets/images/bajo-2.jpg" alt="bajo 1">
+            <h2>BAJO Fender Jazz Bass</h2>
             <button type="button" class="btn btn-primary">Comprar</button>
         </div>
         <div class="div-bajos">
-            <img class="img-bajo1" src="../assets/images/bajo-1.jpg" alt="bajo 1">
+            <img class="img-bajo1" src="../assets/images/bajo-3.jpg" alt="bajo 1">
             <h2>BAJO 3</h2>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+        <div class="div-bajos">
+            <img class="img-bajo1" src="../assets/images/bajo4.jpg" alt="bajo 1">
+            <h2>BAJO 4</h2>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+        <div class="div-bajos">
+            <img class="img-bajo1" src="../assets/images/bajo5.jpg" alt="bajo 1">
+            <h2>BAJO 5</h2>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+        <div class="div-bajos">
+            <img class="img-bajo1" src="../assets/images/bajo6.png" alt="bajo 1">
+            <h2>BAJO 5</h2>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+        <div class="div-bajos">
+            <img class="img-bajo1" src="../assets/images/bajo7.jfif" alt="bajo 1">
+            <h2>BAJO 5</h2>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+        <div class="div-bajos">
+            <img class="img-bajo1" src="../assets/images/nux.jfif" alt="bajo 1">
+            <h2>BAJO 5</h2>
             <button type="button" class="btn btn-primary">Comprar</button>
         </div>
     </section>
