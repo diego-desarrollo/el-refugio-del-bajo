@@ -34,12 +34,13 @@
     border-color: orange;
     border-radius: 20px;
     margin: 20px;
-    height: 250px;
-    transition: height 2s;
+    width: 100%;
+    height: auto;
+    transition: border-color 1s;
 }
 
 .img-bajo1:hover {
-    height: 300px;
+    border-color: orangered;
 }
 
 .btn-primary:hover {

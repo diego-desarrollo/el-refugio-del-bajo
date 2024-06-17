@@ -1,15 +1,9 @@
 @charset "UTF-8";
 @import 'animate.css';
-.button-basic, .button-report {
-  border: none;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.button-report {
-  background-color: red;
+.btn-primary, .btn-primary:hover {
+  background-color: orange;
+  border-color: orange;
+  color: black;
 }
 
 @keyframes resaltar-texto {
@@ -234,24 +228,17 @@ body {
   border-color: orange;
   border-radius: 20px;
   margin: 20px;
-  height: 250px;
-  transition: height 2s;
+  width: 100%;
+  height: auto;
+  transition: border-color 1s;
 }
 
 .img-bajo1:hover {
-  height: 300px;
-}
-
-.btn-primary {
-  background-color: orange;
-  border-color: orange;
-  color: black;
+  border-color: orangered;
 }
 
 .btn-primary:hover {
-  background-color: orange;
   background-image: linear-gradient(to top, orange, orangered);
-  border-color: orangered;
   color: black;
 }
 
@@ -324,6 +311,19 @@ iframe {
 
 input:focus {
   background-color: white;
+}
+
+@media (max-width: 768px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
