@@ -50,30 +50,6 @@ h1 {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 150px;
-        left: 0;
-        z-index: 1;
-    }
-
-    .menu li {
-        margin: 0px 0;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    #menu-toggle:checked+.menu-icon+.menu {
-        display: flex;
-    }
-}
-
 .div-logo {
     /* display: flex; */
     justify-self: left;
